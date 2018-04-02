@@ -1,0 +1,26 @@
+Problem:
+Using the Google Maps API, we want you retrieve the JSON response after applying a query parameter filter to the geocode endpoint.
+Next, take that response and use any code you are familiar with to transform the response and produce the expected output below.
+Starting endpoint: http://maps.googleapis.com/maps/api/geocode/json
+Apply a query parameter to get the address for Green Bay and transform the response.
+Expected transformed output:
+Green Bay
+ID: <insert the place_id here>
+Latitude: <insert latitude here>
+Longitude: <insert longitude here>
+Deliverables: (Things we would like to see)
+Process steps - how you arrived at your solution - most important deliverable!
+Code
+Anything else you would like to include that is important to this work
+
+Process:
+1. I have worked with Google Maps before and retrieved information utilizing JavaSript. I will
+go to developers.google.com/maps/ to see exactly how to make a json request.
+
+2. After researching I have received how to make a geocode request through this website
+
+https://developers.google.com/maps/documentation/geocoding/start
+
+3. After understanding how the request will work, I understrand that the request can be made as such:
+
+http://maps.googleapis.com/maps/api/geocode/json?address=GreenBay
