@@ -1,39 +1,22 @@
-Problem:
-Using the Google Maps API, we want you retrieve the JSON response after applying a query parameter filter to the geocode endpoint.
-Next, take that response and use any code you are familiar with to transform the response and produce the expected output below.
-Starting endpoint: http://maps.googleapis.com/maps/api/geocode/json
-Apply a query parameter to get the address for Green Bay and transform the response.
-Expected transformed output:
-
-Green Bay
-ID: <insert the place_id here>
-Latitude: <insert latitude here>
-Longitude: <insert longitude here>
-Deliverables: (Things we would like to see)
-Process steps - how you arrived at your solution - most important deliverable!
-Code
-Anything else you would like to include that is important to this work
-
 Process Steps:
-1. I have worked with Google Maps before and retrieved information utilizing JavaSript. I will
-go to developers.google.com/maps/ to see exactly how to make a json request.
+1. I have worked with Google Maps before and retrieved information utilizing JavaSript. I will go to developers.google.com/maps/ to see exactly how to make a json request.
 
 2. After researching I have received how to make a geocode request through this website
 
 https://developers.google.com/maps/documentation/geocoding/start
 
-3. After understanding how the request will work, I understrand that the request can be made as such:
+3. After understanding how the request will work, I understand that the request can be made as such:
 
 http://maps.googleapis.com/maps/api/geocode/json?address=GreenBay
 
-4. Getting a key from Google Maps API, sucessfully obtained the key which can be obtained from the code as api_key
+4. Getting a key from Google Maps API. Successfully obtained the key which can be obtained from the code as ‘api_key’
 
 5. After getting the key, I wanted to figure out how to make the request through python. I took a look at the following website:
 
 https://developers.google.com/api-client-library/python/start/get_started
 
-6. I looked at their example named 'simple_api_cmd_line_books.py'. I understood it well but then I realized that the 'build' from
-apiclient.discovery did not have geocoding.
+6. I looked at their example named 'simple_api_cmd_line_books.py' which is also provided in the submission. I understood it well but then I realized that the 'build' from
+apiclient.discovery did not have geocoding so I am unable to make a geocode request through this method.
 
 7. Searched how to make a simple request using python and found this tutorial very useful:
 
@@ -48,3 +31,20 @@ http://docs.python-requests.org/en/latest/user/quickstart/
 http://maps.googleapis.com/maps/api/geocode/json?address=GreenBay
 
 11. Looked at how the Json object is presented, I will print the values accordingly
+
+Answer(Code can be tested to confirm results):
+Input: “Green Bay”
+
+Output:
+Green Bay
+ID: ChIJ84CzCejiAogRcfXcFFIEcGM
+Latitude: 44.5133188
+Longitude: -88.0132958
+
+Input: “Buffalo”
+
+Output:
+Buffalo
+ID: ChIJoeXfUmES04kRcYEfGKUEI5g
+Latitude: 42.8864468
+Longitude: -78.8783689
