@@ -4,6 +4,7 @@ Next, take that response and use any code you are familiar with to transform the
 Starting endpoint: http://maps.googleapis.com/maps/api/geocode/json
 Apply a query parameter to get the address for Green Bay and transform the response.
 Expected transformed output:
+
 Green Bay
 ID: <insert the place_id here>
 Latitude: <insert latitude here>
@@ -13,7 +14,7 @@ Process steps - how you arrived at your solution - most important deliverable!
 Code
 Anything else you would like to include that is important to this work
 
-Process:
+Process Steps:
 1. I have worked with Google Maps before and retrieved information utilizing JavaSript. I will
 go to developers.google.com/maps/ to see exactly how to make a json request.
 
@@ -39,3 +40,11 @@ apiclient.discovery did not have geocoding.
 http://docs.python-requests.org/en/latest/user/quickstart/
 
 8. Began a simple implementation of the requests
+
+9. Needed to enable the geocode implementation from Google Maps Geocoding API
+
+10. Made the request:
+
+http://maps.googleapis.com/maps/api/geocode/json?address=GreenBay
+
+11. Looked at how the Json object is presented, I will print the values accordingly
