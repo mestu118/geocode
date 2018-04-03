@@ -24,3 +24,18 @@ https://developers.google.com/maps/documentation/geocoding/start
 3. After understanding how the request will work, I understrand that the request can be made as such:
 
 http://maps.googleapis.com/maps/api/geocode/json?address=GreenBay
+
+4. Getting a key from Google Maps API, sucessfully obtained the key which can be obtained from the code as api_key
+
+5. After getting the key, I wanted to figure out how to make the request through python. I took a look at the following website:
+
+https://developers.google.com/api-client-library/python/start/get_started
+
+6. I looked at their example named 'simple_api_cmd_line_books.py'. I understood it well but then I realized that the 'build' from
+apiclient.discovery did not have geocoding.
+
+7. Searched how to make a simple request using python and found this tutorial very useful:
+
+http://docs.python-requests.org/en/latest/user/quickstart/
+
+8. Began a simple implementation of the requests
